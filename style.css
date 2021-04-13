@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  background: url(/images/lap\ top\ image.jpg);
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 98vh;
+}
+header::before {
+  content: "";
+  background-color: #000000, 40%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.4;
+}
+
+
+/* nav bar */
+
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #221c23;
+  padding: 1rem 3rem;
+  align-items: center;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 900;
+}
+
+nav.sticky {
+    background-color: #19161a;
+}
+
+nav .logo img {
+  width: 97px;
+  height: 60px;
+}
+
+nav .nav_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_links li {
+  padding-right: 2rem;
+}
+
+.nav_links li a {
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.sign_in_btn {
+  background-color: #00aaff;
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 30px;
+  font-size: 2rem;
+  border: none;
+}
+
+.title {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 79px;
+}
+
+.title h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.title p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #f90303;
+  font-weight: 900;
+  padding-right: 5px;
+}
+.btn {
+  background-color: #00aaff;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.form_contianer {
+  text-align: center;
+  padding: 3.8rem;
+  position: absolute;
+  width: 400px;
+  right: 5%;
+  top: 20%;
+  background: #ffffff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.53);
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+form h2 {
+  color: #00aaff;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+input{
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 1px solid;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+input[type= text] {    
+    text-transform: capitalize;
+}
+
+button{
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #00aaff;
+    border-radius: 30px;
+    border: none;
+}
+
+
+/* main section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+   background: #E5E5E5;
+}
+
+main h4 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #F90303;
+    margin-bottom: 1rem;
+}
+
+main h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #444242;
+    /* letter-spacing: 2; */
+    margin: auto;
+    margin-bottom: 6.4rem;
+    text-align: center;
+    width: 50%;
+}
+
+main .zuri_features {
+    display: flex;
+}
+
+.zuri_features h4 {
+    font-size: 2.4rem;
+    color: #000000;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0;
+} 
+
+.zuri_features p {
+    color: #000000;
+    font-size: 2rem;
+    padding: 4rem;
+}
+
+
+/* join us */
+
+.join_us {
+    background-color: #00aaff;
+    padding: 4rem;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.join_us h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.join_us p {
+    font-size: 1.6rem;
+}
